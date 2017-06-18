@@ -62,9 +62,9 @@ while read -ra data; do
 	printf 'clean\nquit\ny\n' | \
 		${GPG} --command-fd 0 --edit-key ${keyid}
 	if ! ${GPG} --list-keys --with-colons ${keyid} 2>/dev/null | grep -q '^pub:f:'; then
-		#fix later, this is not working correctly
 		echo "key is not fully trusted: ${keyid} ${username}"
-		#${GPG} --armor --no-emit-version --export ${keyid} >> packager/${username}.asc
+		#fix later, this is not working correctly add the keys even though they are not fully trusted
+		${GPG} --armor --no-emit-version --export ${keyid} >> packager/${username}.asc
 	else
 		${GPG} --armor --no-emit-version --export ${keyid} >> packager/${username}.asc
 	fi
