@@ -24,6 +24,7 @@ Expire-Date: 0
 EOF
 
 rm -rf master{,-revoked} packager{,-revoked} cromnix-{trusted,revoked}
+touch cromnix-revoked
 mkdir master packager master-revoked packager-revoked
 
 while read -ra data; do
