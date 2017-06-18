@@ -8,8 +8,8 @@ arch=('any')
 url='https://github.com/cromnix/cromnix-keyring/'
 license=('GPL')
 install="${pkgname}.install"
-source=("${pkgname}-${pkgver}::https://github.com/cromnix/cromnix-keyring/archive/${pkgver}.tar.gz")
-md5sums=('183822966119dc095bc74c3e4387caf2')
+source=("${pkgname}-${pkgver}.tar.gz::https://github.com/cromnix/cromnix-keyring/archive/${pkgver}.tar.gz")
+md5sums=('54bdb1856334c375cac66cc99aeaba4c')
 validpgpkeys=('A55C3F1BA61CAA63036D82BAFA91071797BEEEC2') # cromer
 
 package() {
