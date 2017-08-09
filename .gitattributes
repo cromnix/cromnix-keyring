@@ -5,8 +5,6 @@ master-keyids	export-ignore
 packager-keyids	export-ignore
 master		export-ignore
 packager	export-ignore
-PKGBUILD	export-ignore
-cromnix-keyring.install	export-ignore
 README.md	export-ignore
 master-revoked-keyids	export-ignore
 packager-revoked-keyids	export-ignore
